@@ -1,0 +1,106 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:16px; }
+body {
+  /*  Typography */
+  font-family:'Poppins', sans-serif; /* font-family */
+  font-size:1rem; /* font-size rem */
+  font-weight:400; /* font-weight */
+  line-height:1.7; /* line-height */
+  letter-spacing:0.02em; /* letter-spacing */
+  color:lch(29.13% 115.08 306.37); /* color */
+  background:rgb(255, 192, 238); 
+}
+
+/* Headings */
+h1 { font-size:3rem; font-weight:800; line-height:1.1; }
+h2 { font-size:1.25rem; font-weight:700; }
+
+/* NAV */
+.site-header {
+  display:flex; /*  flex */
+  flex-direction:row; /* direction */
+  justify-content:space-between; /* space between */
+  align-items:center; /* center */
+  padding:1em 5%; /* em % */
+  width:100%; /* % */
+  background:hwb(293 23% 7%); 
+  border-bottom:4px solid #ec4899;
+  box-shadow:0 4px 15px rgba(0,0,0,0.15);
+  position:sticky; top:0; z-index:99;
+}
+.brand-name { font-size:1.7rem; font-weight:800; color:#fff; }
+.main-menu { display:flex; gap:1rem; list-style:none; }
+.main-menu a {
+  text-decoration:none; font-weight:700; padding:0.6em 1.2em; border-radius:30px;
+  color:#fff; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4);
+}
+.main-menu a:hover { background:#fff; color:#7c3aed; } /* hover */
+.main-menu a:focus { outline:2px solid #fff; }
+.main-menu a:active { background:#ec4899; }
+
+/* HERO  */
+.hero-section {
+  display:grid; /*  grid */
+  grid-template-areas:"content visual"; /* areas */
+  grid-template-columns:1fr 1fr;
+  gap:4%; padding:4% 5%; align-items:center;
+  background:#ffffff; /* clean white */
+  border-radius:20px; margin:2% auto; width:96%;
+  border-bottom:4px solid #e9d5ff;
+}
+.hero-content { grid-area:content; }
+.hero-visual { grid-area:visual; display:flex; justify-content:center; }
+.top-tag { background:#ec4899; color:lch(44.32% 72.89 343.9); padding:0.4em 1em; border-radius:20px; font-size:0.85rem; font-weight:700; display:inline-block; }
+
+/* Buttons */
+.action-btn { display:inline-block; text-decoration:none; padding:0.9em 1.8em; border-radius:30px; font-weight:700; }
+.pink-btn { background:#ec4899; color:#fff; border:2px solid #ec4899; }
+.light-btn { background:#fff; color:#7c3aed; border:2px solid #e9d5ff; }
+.full-width { width:100%; margin-top:1em; text-align:center; }
+.flex-row { display:flex; gap:1em; flex-wrap:wrap; }
+.pink-btn:hover { background:#7c3aed; border-color:#7c3aed; }
+.light-btn:hover { background:#fdf2f8; border-color:#ec4899; }
+.pink-btn:focus, .light-btn:focus { outline:3px solid #3b82f6; }
+
+/* GRIDS */
+.card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2%; padding:2% 3%; width:96%; background:transparent; margin:2% auto; }
+.split-grid { display:grid; grid-template-columns:1.3fr 0.7fr; gap:2%; padding:2% 3%; width:96%; background:#ffffff; border-radius:20px; margin:2% auto; }
+
+/* Images */
+img { max-width:100%; display:block; border-radius:12px; }
+.hero-visual img { width:100%; max-width:380px; height:320px; max-height:320px; object-fit:cover; }
+.content-card img { width:100%; height:150px; max-height:150px; object-fit:cover; border-radius:10px; margin-bottom:1em; }
+
+/* MISSION VISION VALUES  */
+.content-card {
+  background:#fff; border-radius:16px; padding:1.3em;
+  border-top:5px solid #ec4899;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+.content-card:nth-child(1) { background:#fff0f6; border-top-color:#ec4899; } /* Mission  */
+.content-card:nth-child(2) { background:#f5f0ff; border-top-color:#7c3aed; } /* Vision  */
+.content-card:nth-child(3) { background:#eff6ff; border-top-color:#3b82f6; } /* Values  */
+.content-card:hover { transform:translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.08); }
+
+/* Form */
+.form-wrap label { display:block; font-weight:700; margin:1em 0 0.3em; color:#7c3aed; }
+.form-wrap input, .form-wrap select, .form-wrap textarea { width:100%; padding:0.8em; border-radius:10px; border:2px solid #e9d5ff; background:#fff; }
+.form-wrap input:focus { border-color:#ec4899; outline:none; }
+
+/* Footer  */
+footer { background:#7c3aed; color:#fff; padding:2% 5%; text-align:center; margin-top:3%; border-radius:20px 20px 0 0; }
+
+/* Breakpoints - FOR CARDS */
+@media screen and (max-width:768px) {
+  .site-header { flex-direction:column; gap:1em; }
+  .card-grid { grid-template-columns:1fr 1fr; gap:3%; }
+  .split-grid { grid-template-columns:1fr; }
+  .hero-section { grid-template-columns:1fr; }
+}
+
+@media screen and (max-width:480px) {
+  .card-grid { grid-template-columns:1fr; }
+  .main-menu { flex-direction:column; width:100%; }
+  .main-menu a { width:100%; text-align:center; }
+  h1 { font-size:2rem; }
+}

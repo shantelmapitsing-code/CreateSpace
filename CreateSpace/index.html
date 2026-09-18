@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreateSpace Youth Hub - Home</title>
+  <!-- 2.5 External CSS link - external stylesheet only -->
+  <link rel="stylesheet" href="css_assets/myfirststyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header: Flexbox layout -->
+  <header class="site-header">
+    <div class="brand-name"> CreateSpace</div>
+    <nav aria-label="Main navigation">
+      <ul class="main-menu">
+        <!-- Navigation links with hover focus active visual styles -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Programs</a></li>
+        <li><a href="enquiries.html">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <!-- Tag badge with gradient -->
+      <span class="top-tag">FREE FOR 14-24</span>
+      <!--  Typography heading with gradient -->
+      <h1>Create Your <span class="gradient-word">Future</span> Here</h1>
+      <p class="intro-text">Youth hub with studios, laptops, mentors - all free. Catchy pink purple blue white theme with hover magic.</p>
+      <div style="display:flex; gap:1em; flex-wrap:wrap;">
+        <a href="enquiries.html" class="action-btn pink-btn">Get Started →</a>
+        <a href="products.html" class="action-btn light-btn">View Programs</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!--  Responsive Images -->
+      <picture>
+        <source media="(max-width:480px)" srcset="images/photography.jpg 480w">
+        <source media="(max-width:768px)" srcset="images/photography.jpg 768w">
+        <img src="images/photography.jpg" 
+             alt="Youth creator with camera" 
+             sizes="(max-width:480px) 90vw, (max-width:768px) 80vw, 400px">
+      </picture>
+    </div>
+  </section>
+
+  <!-- Cards Grid-->
+  <section class="card-grid">
+    <div class="content-card">
+      <img src="images/music.jpg" alt="Music studio" srcset="images/music.jpg 400w, images/music.jpg 800w" sizes="(max-width:768px) 100vw, 33vw">
+      <h2>Music Studio</h2>
+      <p>Record your tracks with professional equipment and mentorship.</p>
+      <a href="enquiries.html" class="card-link">Join now →</a>
+    </div>
+    <!-- Card 2 -->
+    <div class="content-card">
+      <img src="images/art.jpg" alt="Art workshop" srcset="images/art.jpg 400w, images/art.jpg 800w" sizes="(max-width:768px) 100vw, 33vw">
+      <h2> Art Workshops</h2>
+      <p>Learn digital and traditional art from local artists.</p>
+      <a href="enquiries.html" class="card-link">Join now →</a>
+    </div>
+    <!-- Card 3 -->
+    <div class="content-card">
+      <img src="images/coding.jpg" alt="Coding club" srcset="images/coding.jpg 400w, images/coding.jpg 800w" sizes="(max-width:768px) 100vw, 33vw">
+      <h2> Coding Club</h2>
+      <p>Build websites, apps and games from scratch.</p>
+      <a href="enquiries.html" class="card-link">Join now →</a>
+    </div>
+  </section>
+</body>
+</html>
