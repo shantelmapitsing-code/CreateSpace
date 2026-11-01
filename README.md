@@ -15,7 +15,7 @@ Single Stylesheet: css_assets/myfirststyles.css
 7.  HTML Structure: Fixed all pages to use same header/footer and added alt text to all images. Had to separate all 5 files because they were all under one file which was the index.html
 8.  Also added comments on my code they were not there in part1
 
-## What I Added in Part 2 (New for Distinction)
+## What I Added in Part 2
 
 1. Single External CSS:Created `CSS assets/myfirststyles.css` - all 5 pages link to it
 2. Visual Effects:
