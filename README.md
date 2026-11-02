@@ -37,7 +37,7 @@ Single Stylesheet: css_assets/myfirststyles.css
 
 ## File Structure
 - All HTML files are in root for easy linking
-- `css_assets/` contains only 1 CSS file as required for distinction
+- `css_assets/` contains 1 CSS file
 - `images/` contains responsive versions (480w and 800w) to fix broken rainbow images from Part 1
 - `proposal/` contains updated Part 1 documents
 
